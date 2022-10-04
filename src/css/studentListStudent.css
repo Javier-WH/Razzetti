@@ -1,0 +1,48 @@
+.studentList{
+    border: 1px solid var(--mainColor);
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr 5fr 5fr 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
+    cursor: pointer;
+
+}
+.studentList:hover{
+    background-color: var(--mainColor);
+    color: var(--textColor1);
+}
+.tableHeader{
+    background-color: var(--mainColor);
+    color: var(--textColor1);
+    position: absolute !important; 
+}
+.table-lapso{
+    border-left: 1px solid var(--mainColor);
+    text-align: center;
+}
+.table-ci,
+.table-names,
+.table-number{
+    border-right: 1px solid var(--mainColor);
+    text-align: center;
+}
+.table-lastNames{
+    text-align: center;
+}
+
+@media (max-width: 1024px) {
+    .table-lapso,
+    .table-ci,
+    .table-names,
+    .table-lastNames,
+    .table-number{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .tableHeader{
+    
+        width: 100%;
+    }
+}

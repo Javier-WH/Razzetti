@@ -1,0 +1,50 @@
+#studentList{
+    border: 1px solid var(--mainColor);
+    width: 700px;
+    position: fixed;
+    left: auto;
+    right: 10px;
+    top: calc(var(--navBarlogoWidth) + 15px);
+    bottom: 10px;
+    background-color: white;
+    z-index: 1000;
+
+}
+
+#tableContainer{
+    position: relative;
+    width: 100%;
+    height: calc(100% - 1.5em);
+    overflow-y: auto;
+
+}
+ 
+@media (max-width: 1420px) {
+    .accordion-button{
+        background-color: white !important;
+        box-shadow: none !important;
+        height: 20px;
+        background-color: white;
+        color: var(--mainColor);
+        font-weight: 500;
+        z-index: 1100;
+
+    }
+    #acordionButton{
+      
+        border: 1px solid var(--mainColor);
+    }
+
+    
+    #studentList{
+        border-top: 1px solid white;
+        top: calc(var(--navBarlogoWidth) + 50px);
+        width: 100%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: calc(100vh - 190px);
+        z-index: 1100;
+    }
+  
+}

@@ -1,4 +1,12 @@
-export function MainContainer(){
-    return <h1>Hola</h1>
+
+import { StudentList } from "./StudentList";
+import {DataContainer} from "./DataContainer"
+
+export function MainContainer() {
+    return <>
+        <DataContainer/>
+        <StudentList />
+
+    </>
 
 }

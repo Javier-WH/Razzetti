@@ -4,7 +4,16 @@
     --navBarlogoWidth: 100px;
     --mainColor: rgb(16, 54, 5);
     --mainColor2: rgb(95, 146, 79);
+    
+
 }
 .invisible{
     display: none;
+}
+
+body{
+    background-image: url("background.svg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }

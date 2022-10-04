@@ -1,13 +1,29 @@
-import React, {createContext} from "react";
+import React, {createContext, useState} from "react";
 
+
+import { fakeStudent } from "../components/studentJSOMtests";
 
 export const MainContext = createContext();
 
 
 export function MainContextContextProvider({children}){
 
-    let value = {
+    const [studentList, setStudentList] = useState(fakeStudent());
+    const [activeSubject , setActiveSubject] = useState();
+    const [activeSchoolYear , setActiveSchoolYear] = useState();
 
+    function changeSubject(subject){
+        setActiveSubject(subject);
+        //setStudentList([]);
+    }
+
+    let value = {
+        studentList,
+        setStudentList,
+        activeSubject,
+        changeSubject, 
+        activeSchoolYear, 
+        setActiveSchoolYear
     }
 
     return <MainContext.Provider value={value}>

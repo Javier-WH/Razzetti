@@ -1,0 +1,24 @@
+#seccionName-container{
+    background-color: white !important;
+    overflow: 1 !important;
+    z-index: 2000;
+}
+#seccionName{
+    font-size: 22px;
+    font-weight: 500;
+    width: 100%;
+    text-align: center;
+}
+#seccionSchoolYear{
+    width: 100%;
+    text-align: center;
+}
+#seccionMessage{
+    width: 100%;
+    height: 640px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 500;
+}
