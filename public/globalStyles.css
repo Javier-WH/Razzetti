@@ -1,4 +1,10 @@
 :root{
-    --shadowColor1: rgb(255, 255, 255);
+    --shadowColor1: rgb(218, 168, 3);
     --textColor1:rgb(255, 255, 255);
+    --navBarlogoWidth: 100px;
+    --mainColor: rgb(16, 54, 5);
+    --mainColor2: rgb(95, 146, 79);
+}
+.invisible{
+    display: none;
 }

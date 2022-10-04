@@ -1,0 +1,39 @@
+#navBar-logo {
+    width: var(--navBarlogoWidth);
+    margin-right: 30px;
+    filter: drop-shadow(0 0 3px var(--shadowColor1));
+    cursor: pointer;
+}
+
+#navBarBtnLogo:hover,
+#navBarBtnLogo:focus,
+#navBarBtnLogo:active,
+#navBarBtnLogo {
+    background-color: transparent !important;
+    border: 1px solid transparent !important;
+    outline: none !important;
+    box-shadow: none !important;
+    padding: 0;
+}
+
+#navBarOffcanvas {
+    margin-top: calc(var(--navBarlogoWidth) + 11px);
+
+}
+
+#navBarUserItem {
+    margin-left: -20px;
+    padding: 0;
+}
+
+.navBarCanvasItem {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    padding: 10px 0;
+    cursor: pointer;
+}
+.navBarCanvasItem:hover {
+  background-color: var(--mainColor);
+  color: white;
+}
